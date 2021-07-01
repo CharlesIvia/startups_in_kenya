@@ -45,3 +45,9 @@ dataframes = [first_df, second_df, third_df]
 df = pd.concat(dataframes, axis=0, ignore_index=True)
 
 print(f"Cobined dataframe {df}")
+
+# Initial data cleanup
+# From the above dataframe, we only need the Startup and Description columns
+
+clean_df = df.drop(["Rank", "SR Score", "Country Rank"], axis=1)
+print(clean_df)
