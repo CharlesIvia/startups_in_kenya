@@ -29,14 +29,8 @@ def read_data(url):
 # Call the function and create dataframes
 
 first_df = read_data(first_page)[0]
-print(first_df)
-
 second_df = read_data(second_page)[0]
-print(second_df)
-
 third_df = read_data(third_page)[0]
-print(third_df)
-
 
 dataframes = [first_df, second_df, third_df]
 
@@ -46,8 +40,11 @@ df = pd.concat(dataframes, axis=0, ignore_index=True)
 
 print(f"Cobined dataframe {df}")
 
-# Initial data cleanup
+# Initial data cleaning
 # From the above dataframe, we only need the Startup and Description columns
 
 clean_df = df.drop(["Rank", "SR Score", "Country Rank"], axis=1)
 print(clean_df)
+
+#Save dataframe as csv 
+clean_df.to_csv("initial_scrapper_data.csv")
