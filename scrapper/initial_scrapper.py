@@ -1,4 +1,4 @@
-# This script Kenyan scraps startups from startupranking.com
+# This script scraps Kenyan startups from startupranking.com
 
 # Import required libraries
 

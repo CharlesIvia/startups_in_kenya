@@ -1,4 +1,4 @@
-# This script Kenyan scraps startups from https://startuplist.africa/
+# This script scraps Kenyan startups from https://startuplist.africa/
 
 # Import required libraries
 
@@ -18,7 +18,7 @@ driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")
 driver.get("https://startuplist.africa/startups-in-kenya")
 
 # wait for page content to load
-driver.implicitly_wait(15)
+driver.implicitly_wait(20)
 
 # Get data from first page
 html = driver.page_source
@@ -44,5 +44,5 @@ df = data
 print(df)
 
 # Save data
-df.to_csv("startups.csv")
+df.to_csv("./data/startups.csv")
 driver.close()
