@@ -4,21 +4,21 @@ This repository contains open datasets for startups in Kenya.
 
 ## Acknowledgement 
 
-> *  [neville](https://github.com/nevilleomangi) for guidance on web scrapping. 
+ *  [neville](https://github.com/nevilleomangi) for guidance on web scrapping. 
 
 ## Data Structure 
 
 The data folder contains data scrapped from various websites as well as manually added data. The main csv file is structured as follows:
 
-> * Startup 
-> * Overview 
-> * Industries 
-> * Last Round 
-> * Total raised 
-> * Founders 
-> * Year Founded
-> * Website
-> * Status
+ * Startup: The name of the startup
+ * Overview: A brief description of the startup 
+ * Industries: The sectors that the startup operates in 
+ * Last Round: Latest round of funding  
+ * Total raised: Total funds raised  
+ * Founders: Starup founders 
+ * Year Founded: When the startup was started
+ * Website: A link to the startup's website
+ * Status: Dead or Alive?
 
 ## Contributing 
 
