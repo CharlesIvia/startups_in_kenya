@@ -12,20 +12,22 @@ from selenium import webdriver
 
 url = "https://startuplist.africa/startups-in-kenya"
 
+# Driver path
+driver_path = "C:\webdrivers\chromedriver.exe"
+
 # Read Data
+driver = webdriver.Chrome(driver_path)
+driver.get(url=url)
 
-driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")
-driver.get("https://startuplist.africa/startups-in-kenya")
-
-# wait for page content to load
-driver.implicitly_wait(20)
+# Wait for page content to load
+driver.implicitly_wait(40)
 
 # Get data from first page
 html = driver.page_source
 table = pd.read_html(html)
 first_page = table[0]
 
-# Create dataframe
+# Create dataframe and append data from first page
 data = pd.DataFrame()
 data = data.append(first_page, ignore_index=True)
 
