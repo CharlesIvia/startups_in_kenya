@@ -1,10 +1,10 @@
 # Required libraries
 import pandas as pd
-from startup_scripts import access_afya, afribon
+from update_startups_info import access_afya, afribon
 
 # Read-in Data
-
 df = pd.read_csv("./data/startups.csv", index_col="Startup")
+# Drop unwanted column
 df = df.drop("Unnamed: 0", axis=1)
 
 # Create additional columns
