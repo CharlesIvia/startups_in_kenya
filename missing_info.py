@@ -6,6 +6,10 @@ from update_startups_info import (
     africa_ai_labs,
     africas_talking,
     africa_sokoni,
+    ajua,
+    alternative_circle,
+    amitruck,
+    angaza
 )
 
 # Read-in Data
@@ -37,6 +41,22 @@ print(df)
 # Africa Sokoni
 africa_sokoni.africa_sokoni_data(df)
 print(df)
+
+# Ajua
+ajua.ajua_data(df)
+print(df.head(20))
+
+#Alternative circle 
+alternative_circle.alternative_circle_data(df)
+print(df.head(20))
+
+#Amitruck 
+amitruck.amitruck_data(df)
+print(df.head(20))
+
+#Angaza 
+angaza.angaza_data(df)
+print(df.head(20))
 
 # Save dataframe
 df.to_csv("./data/main.csv")
