@@ -1,6 +1,12 @@
 # Required libraries
 import pandas as pd
-from update_startups_info import access_afya, afribon
+from update_startups_info import (
+    access_afya,
+    afribon,
+    africa_ai_labs,
+    africas_talking,
+    africa_sokoni,
+)
 
 # Read-in Data
 df = pd.read_csv("./data/startups.csv", index_col="Startup")
@@ -20,6 +26,17 @@ print(df)
 afribon.afribon_data(df)
 print(df)
 
-# Save dataframe
+# Africa AI Labs
+africa_ai_labs.africa_ai_labs_data(df)
+print(df)
 
+# Africa's Talking
+africas_talking.africas_talking_data(df)
+print(df)
+
+# Africa Sokoni
+africa_sokoni.africa_sokoni_data(df)
+print(df)
+
+# Save dataframe
 df.to_csv("./data/main.csv")
