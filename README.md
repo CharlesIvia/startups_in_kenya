@@ -6,7 +6,7 @@ This repository contains open datasets for startups in Kenya.
 
  *  [neville](https://github.com/nevilleomangi) for guidance on web scrapping. 
 
-## Data Structure 
+## File Structure 
 
 The data folder contains data scrapped from various websites as well as manually added data. The main csv file is structured as follows:
 
