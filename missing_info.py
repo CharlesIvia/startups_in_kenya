@@ -9,7 +9,8 @@ from update_startups_info import (
     ajua,
     alternative_circle,
     amitruck,
-    angaza
+    angaza,
+    apollo_agriculture
 )
 
 # Read-in Data
@@ -56,6 +57,10 @@ print(df.head(20))
 
 #Angaza 
 angaza.angaza_data(df)
+print(df.head(20))
+
+#Apollo agricluture 
+apollo_agriculture.apollo_agriculture_data(df)
 print(df.head(20))
 
 # Save dataframe
