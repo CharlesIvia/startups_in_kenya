@@ -10,7 +10,10 @@ from update_startups_info import (
     alternative_circle,
     amitruck,
     angaza,
-    apollo_agriculture
+    apollo_agriculture,
+    asilimia,
+    asoko_insight,
+    aza_finance,
 )
 
 # Read-in Data
@@ -47,20 +50,30 @@ print(df)
 ajua.ajua_data(df)
 print(df.head(20))
 
-#Alternative circle 
+# Alternative circle
 alternative_circle.alternative_circle_data(df)
 print(df.head(20))
 
-#Amitruck 
+# Amitruck
 amitruck.amitruck_data(df)
 print(df.head(20))
 
-#Angaza 
+# Angaza
 angaza.angaza_data(df)
 print(df.head(20))
 
-#Apollo agricluture 
+# Apollo agricluture
 apollo_agriculture.apollo_agriculture_data(df)
+print(df.head(20))
+
+# Asimilia
+asilimia.asilimia_data(df)
+
+# Asoko Insight
+asoko_insight.asoko_insight_data(df)
+
+# Aza Finance
+aza_finance.aza_finance_data(df)
 print(df.head(20))
 
 # Save dataframe
